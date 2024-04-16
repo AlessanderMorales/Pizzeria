@@ -1,0 +1,85 @@
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 20px;
+    background-color: transparent;
+}
+
+
+.contenedor-servicios {
+    display: flex;
+    justify-content: flex-end; /* Esto alinea los elementos a la derecha */
+    align-items: center; /* Esto centra los elementos verticalmente */
+    padding-right: 50px; /* Ajusta el espacio a la derecha */
+    height: 100%; /* Esto asegura que el contenedor tenga altura */
+}
+
+
+.feature {
+    width: 21%;
+    margin: 40px;
+    box-sizing: border-box;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.feature h4 {
+    color: red;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.feature p {
+    color: darkgrey;
+    text-align: center;
+    margin: 0;
+}
+
+.feature-servicios h3 {
+    font-weight: bolder;
+    font-size: 320%;
+    color: #fff;
+}
+
+.feature-servicios h4 {
+    font-weight: bolder;
+    font-size: 200%;
+    color: #fff;
+}
+
+.feature-servicios p {
+    font-weight: bolder;
+    font-size: medium;
+    color: #fff;
+}
+
+
+.feature-servicios img {
+    width: 150px; /* O el tamaño que desees */
+    height: 150px; /* Para mantener la relación de aspecto */
+    border-radius: 50%; /* Para hacer las imágenes circulares */
+    object-fit: cover; /* Asegura que la imagen se ajuste correctamente al espacio */
+}
+
+/* Puedes necesitar ajustar el texto para que se vea bien con los nuevos estilos */
+.feature-servicios h4, .feature-servicios p {
+    text-align: center;
+    /* Otros estilos de texto que necesites */
+}
+
+@media (max-width: 600px) {
+    .feature img, .menu-item img {
+        width: 100%;
+    }
+}

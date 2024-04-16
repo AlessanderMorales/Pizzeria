@@ -1,0 +1,41 @@
+.ubicaciones-pizzeria {
+    background-color: #ffffff; /* El color de fondo negro */
+    color: #000000; /* El color del texto blanco */
+    padding: 50px 0; /* Un padding superior e inferior */
+    text-align: center; /* Alineación del texto al centro */
+  }
+  
+  .ubicaciones-pizzeria h2 {
+    margin-bottom: 30px; /* Espacio debajo del título */
+    font-size: 3rem; /* Tamaño del título */
+  }
+  
+  .ubicaciones {
+    display: flex;
+    justify-content:center; /* Distribución equitativa de las ubicaciones */
+    flex-wrap: wrap; /* Ajuste de los elementos en pantallas más pequeñas */
+  }
+  
+  .ubicacion h3 {
+    font-size: 1.9rem; /* Tamaño del título de la ubicación */
+    margin-bottom: 10px; /* Espacio debajo del título de la ubicación */
+    color: red;
+    font-weight:bolder;
+  }
+  
+  .ubicacion p {
+    font-size: 0.8rem; /* Tamaño del texto */
+    line-height: 1.7; /* Espacio entre líneas */
+  }
+  
+  /* Ajustes responsivos para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .ubicaciones {
+      flex-direction: column; /* Las ubicaciones se apilan verticalmente */
+    }
+  
+    .ubicacion {
+      margin-bottom: 20px; /* Espacio debajo de cada ubicación */
+    }
+  }
+  

@@ -1,0 +1,148 @@
+.promocion-app {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f3ecec; /* O el color de fondo que prefieras */
+    color: #000000; /* Color del texto */
+    margin-top: 10%;
+    margin-bottom: 5%;
+    height: 71vh;
+}
+
+.contenido {
+    max-width: 50%;
+    padding: 0 50px;
+}
+
+.contenido h2 {
+    font-size: 2rem; /* Ajusta según tus necesidades */
+    color: #000000; /* Ajusta el color según tus necesidades */
+}
+
+.contenido h1 {
+    font-size: 3rem; /* Ajusta según tus necesidades */
+    margin: 20px 0;
+}
+
+.contenido p {
+    margin-bottom: 30px;
+    font-size: 1rem; /* Ajusta según tus necesidades */
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+}
+
+.boton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Ajusta según tus necesidades */
+    text-transform: uppercase;
+    color: #fff; /* Color del texto */
+    background-color: #e63946; /* Ajusta el color de fondo según tus necesidades */
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.boton.google-play {
+    background-color: #333; /* Ajusta el color de fondo según tus necesidades */
+}
+
+.boton.app-store {
+    background-color: #555; /* Ajusta el color de fondo según tus necesidades */
+}
+
+.contenedor-imagen {
+    max-width: 50%;
+}
+
+.imagen-celular {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 5%;
+}
+
+@media (max-width: 1200px){
+    .promocion-app {
+        height: 81vh; 
+    } 
+}
+
+@media (max-width: 892px){
+    .promocion-app {
+        height: 78vh; 
+    } 
+}
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .promocion-app {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px; /* Menos padding para más espacio */
+        height: 140vh; 
+    }
+
+    .contenido, .contenedor-imagen {
+        max-width: 100%;
+    }
+
+    .contenido h2 {
+        font-size: 1.5rem; /* Texto más pequeño para pantallas pequeñas */
+    }
+
+    .contenido h1 {
+        font-size: 2.5rem; /* Texto más pequeño para pantallas pequeñas */
+    }
+
+    .contenido p {
+        font-size: 0.9rem; /* Texto más pequeño para pantallas pequeñas */
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* Espacio entre botones */
+    }
+
+    .boton {
+        width: 80%; /* Botones más estrechos */
+        padding: 15px; /* Más padding para botones más táctiles */
+    }
+
+    .imagen-celular {
+        margin-top: 3%; /* Ajusta según necesites */
+    }
+}
+
+/* Ajustes adicionales para teléfonos móviles */
+@media (max-width: 480px) {
+    .promocion-app {
+        padding: 20px; /* Aún menos padding para más espacio */
+    }
+
+    .contenido h2 {
+        font-size: 1.3rem; /* Texto aún más pequeño para pantallas muy pequeñas */
+    }
+
+    .contenido h1 {
+        font-size: 2rem; /* Texto aún más pequeño para pantallas muy pequeñas */
+    }
+
+    .contenido p {
+        font-size: 0.8rem; /* Texto aún más pequeño para pantallas muy pequeñas */
+    }
+
+    .boton {
+        width: 90%; /* Botones ocupan casi todo el ancho */
+    }
+
+    /* Considera esconder la imagen o hacerla aún más pequeña */
+    .imagen-celular {
+        width: 80%; /* Imagen más pequeña */
+        margin-top: 2%; /* Menos espacio en la parte superior */
+    }
+}

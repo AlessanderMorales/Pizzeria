@@ -1,0 +1,76 @@
+.pie-pagina {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.contenido-pie {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.seccion-pie {
+    margin: 0 20px;
+}
+
+.seccion-pie h3,
+.seccion-pie h4 {
+    color: #000000; /* Rojo para los títulos */
+    font-size: 140%;
+}
+
+.seccion-pie p,
+.lista-pie {
+    color: #000000; /* Blanco para el texto y la lista */
+}
+
+.lista-pie {
+    list-style: none;
+    padding: 0;
+}
+
+.iconos-sociales{
+    margin-top: 5%;
+}
+
+
+/* Aquí aplicarías estilos a los íconos de las redes sociales, como fuentes de íconos o imágenes */
+
+.fondo-pie {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.fab.fa-facebook-f {
+    font-size: 24px; /* Tamaño del ícono */
+    color: #000000; /* Color oficial de Facebook */
+    margin-left: 5%;
+}
+
+
+.enlace-red-social.twitter .fab {
+    font-size: 24px;
+    color: #000000; /* Color oficial de Twitter */
+    margin-left: 5%;
+}
+
+/* Específico para Instagram */
+.enlace-red-social.instagram .fab {
+    font-size: 24px;
+    color: #000000; /* Color oficial de Instagram */
+    margin-left: 5%;
+}
+
+/* Adaptaciones responsivas para móviles */
+@media (max-width: 768px) {
+    .contenido-pie {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion-pie {
+        margin: 10px 0;
+    }
+}
